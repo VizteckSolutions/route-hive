@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfileViewController" customModule="B4_Driver" customModuleProvider="target">
+            <connections>
+                <outlet property="countryCodeLabel" destination="QPN-Ms-nRg" id="aWG-lN-bM9"/>
+                <outlet property="editProfileButton" destination="Osp-Y7-UCb" id="WyF-w9-f7v"/>
+                <outlet property="firstNameTextField" destination="URF-rU-Ibp" id="Xpf-zg-VSd"/>
+                <outlet property="flagImageView" destination="u7w-pB-cFw" id="1hh-Ck-Z73"/>
+                <outlet property="lastNameTextField" destination="MBP-Vo-TjS" id="uiY-5I-ikA"/>
+                <outlet property="phoneNumberTextField" destination="rmf-gR-Zgo" id="Sb0-Y0-ejP"/>
+                <outlet property="profileImageView" destination="kgw-eb-CAZ" id="r75-1j-VRb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_default_image" translatesAutoresizingMaskIntoConstraints="NO" id="kgw-eb-CAZ">
+                    <rect key="frame" x="139.5" y="20" width="96" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="96" id="3sX-io-6no"/>
+                        <constraint firstAttribute="height" constant="96" id="mVj-Eq-bnC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCirculer" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osp-Y7-UCb">
+                    <rect key="frame" x="205.5" y="20" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="eof-km-0D5"/>
+                        <constraint firstAttribute="height" constant="30" id="flv-Fv-mtI"/>
+                    </constraints>
+                    <state key="normal" image="icon_upload_photo"/>
+                    <connections>
+                        <action selector="editProfileButtonTapped:" destination="-1" eventType="touchUpInside" id="NDn-DJ-qJR"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="URF-rU-Ibp" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                    <rect key="frame" x="16" y="133" width="163.5" height="44"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="mog-vJ-RjU"/>
+                    </constraints>
+                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MBP-Vo-TjS" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                    <rect key="frame" x="195.5" y="133" width="163.5" height="44"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rmf-gR-Zgo" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                    <rect key="frame" x="105.5" y="192" width="253.5" height="44"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                </textField>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZIa-tb-y3l">
+                    <rect key="frame" x="16" y="192" width="81.5" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2c-xx-TEM">
+                            <rect key="frame" x="0.0" y="0.0" width="81.5" height="44"/>
+                            <connections>
+                                <action selector="countryButtonTapped:" destination="-1" eventType="touchUpInside" id="lbC-wn-Hjf"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPN-Ms-nRg">
+                            <rect key="frame" x="44" y="12.5" width="27.5" height="19"/>
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_malasya" translatesAutoresizingMaskIntoConstraints="NO" id="u7w-pB-cFw">
+                            <rect key="frame" x="8" y="6" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="R9z-CO-IOt"/>
+                                <constraint firstAttribute="height" constant="32" id="oOV-fd-lty"/>
+                            </constraints>
+                        </imageView>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="ph2-2Y-Arh">
+                            <rect key="frame" x="73.5" y="16" width="0.0" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" id="BOU-Fh-oXd"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="u7w-pB-cFw" firstAttribute="leading" secondItem="ZIa-tb-y3l" secondAttribute="leading" constant="8" id="4H3-0d-hce"/>
+                        <constraint firstItem="d2c-xx-TEM" firstAttribute="leading" secondItem="ZIa-tb-y3l" secondAttribute="leading" id="R4G-xE-RVm"/>
+                        <constraint firstItem="QPN-Ms-nRg" firstAttribute="leading" secondItem="u7w-pB-cFw" secondAttribute="trailing" constant="4" id="ZJi-od-7L9"/>
+                        <constraint firstAttribute="trailing" secondItem="d2c-xx-TEM" secondAttribute="trailing" id="ack-l3-qfh"/>
+                        <constraint firstItem="u7w-pB-cFw" firstAttribute="centerY" secondItem="ZIa-tb-y3l" secondAttribute="centerY" id="lGL-ns-Ptj"/>
+                        <constraint firstItem="ph2-2Y-Arh" firstAttribute="centerY" secondItem="ZIa-tb-y3l" secondAttribute="centerY" id="oYu-2i-JwG"/>
+                        <constraint firstAttribute="trailing" secondItem="ph2-2Y-Arh" secondAttribute="trailing" constant="8" id="qvY-hm-Dap"/>
+                        <constraint firstItem="d2c-xx-TEM" firstAttribute="top" secondItem="ZIa-tb-y3l" secondAttribute="top" id="smv-Q0-EUp"/>
+                        <constraint firstAttribute="bottom" secondItem="d2c-xx-TEM" secondAttribute="bottom" id="tSm-e1-vb2"/>
+                        <constraint firstItem="ph2-2Y-Arh" firstAttribute="leading" secondItem="QPN-Ms-nRg" secondAttribute="trailing" constant="2" id="yTz-lJ-b5z"/>
+                        <constraint firstItem="QPN-Ms-nRg" firstAttribute="centerY" secondItem="ZIa-tb-y3l" secondAttribute="centerY" id="z1C-ex-tUa"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.69411764710000001" green="0.69019607839999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MBP-Vo-TjS" firstAttribute="height" secondItem="URF-rU-Ibp" secondAttribute="height" id="0AP-gQ-sSZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MBP-Vo-TjS" secondAttribute="trailing" constant="16" id="1Xx-qK-QGk"/>
+                <constraint firstItem="Osp-Y7-UCb" firstAttribute="trailing" secondItem="kgw-eb-CAZ" secondAttribute="trailing" id="67i-z6-jYi"/>
+                <constraint firstItem="ZIa-tb-y3l" firstAttribute="height" secondItem="rmf-gR-Zgo" secondAttribute="height" id="6G7-rA-yUL"/>
+                <constraint firstItem="kgw-eb-CAZ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="6xq-Te-a5w"/>
+                <constraint firstItem="rmf-gR-Zgo" firstAttribute="top" secondItem="URF-rU-Ibp" secondAttribute="bottom" constant="15" id="7HA-ao-4GW"/>
+                <constraint firstItem="URF-rU-Ibp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="7XK-wu-l2P"/>
+                <constraint firstItem="kgw-eb-CAZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="80k-3w-p1t"/>
+                <constraint firstItem="MBP-Vo-TjS" firstAttribute="top" secondItem="URF-rU-Ibp" secondAttribute="top" id="8T8-Ng-gZB"/>
+                <constraint firstItem="MBP-Vo-TjS" firstAttribute="width" secondItem="URF-rU-Ibp" secondAttribute="width" id="Kzm-cm-jwn"/>
+                <constraint firstItem="ZIa-tb-y3l" firstAttribute="top" secondItem="URF-rU-Ibp" secondAttribute="bottom" constant="15" id="N4E-Ms-rsV"/>
+                <constraint firstItem="MBP-Vo-TjS" firstAttribute="leading" secondItem="URF-rU-Ibp" secondAttribute="trailing" constant="16" id="O82-Gi-v2o"/>
+                <constraint firstItem="URF-rU-Ibp" firstAttribute="top" secondItem="kgw-eb-CAZ" secondAttribute="bottom" constant="17" id="SId-B7-Pmr"/>
+                <constraint firstItem="Osp-Y7-UCb" firstAttribute="top" secondItem="kgw-eb-CAZ" secondAttribute="top" id="dW1-2q-KkC"/>
+                <constraint firstItem="rmf-gR-Zgo" firstAttribute="height" secondItem="URF-rU-Ibp" secondAttribute="height" id="gur-qs-naQ"/>
+                <constraint firstItem="rmf-gR-Zgo" firstAttribute="leading" secondItem="ZIa-tb-y3l" secondAttribute="trailing" constant="8" id="n4j-z2-aOU"/>
+                <constraint firstItem="ZIa-tb-y3l" firstAttribute="leading" secondItem="URF-rU-Ibp" secondAttribute="leading" id="sCn-HN-j7C"/>
+                <constraint firstItem="rmf-gR-Zgo" firstAttribute="trailing" secondItem="MBP-Vo-TjS" secondAttribute="trailing" id="xaW-d8-2Zj"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_down" width="12" height="12"/>
+        <image name="icon_default_image" width="96" height="96"/>
+        <image name="icon_malasya" width="24" height="18"/>
+        <image name="icon_upload_photo" width="30" height="30"/>
+    </resources>
+</document>

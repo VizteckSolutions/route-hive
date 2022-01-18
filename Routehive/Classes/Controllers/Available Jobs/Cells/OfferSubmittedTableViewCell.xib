@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="156" id="KGk-i7-Jjw" customClass="OfferSubmittedTableViewCell" customModule="B4_Driver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="155.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_default_image" translatesAutoresizingMaskIntoConstraints="NO" id="v4L-ot-Msx">
+                        <rect key="frame" x="16" y="36" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="3FF-81-EFk"/>
+                            <constraint firstAttribute="height" constant="70" id="EHn-oG-iyw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCirculer" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sY6-e3-tzW">
+                        <rect key="frame" x="94" y="46" width="166" height="18"/>
+                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                        <color key="textColor" red="0.047058823530000002" green="0.015686274510000001" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offer Submitted" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmq-8Q-7PO">
+                        <rect key="frame" x="16" y="8" width="105" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="M4S-nU-0wb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                        <color key="textColor" red="0.62352941176470589" green="0.61960784313725492" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="5 mins" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCH-hj-gip">
+                        <rect key="frame" x="268" y="45" width="35.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="c5g-SD-FWD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="12"/>
+                        <color key="textColor" red="0.62352941176470589" green="0.61960784313725492" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="250" text="Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis posuere scelerisque eros sed vestibulum." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhi-g4-fml">
+                        <rect key="frame" x="94" y="64" width="210" height="63.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="sxN-2X-ALw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                        <color key="textColor" red="0.50980392156862742" green="0.51764705882352935" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tnh-Mh-Uqd">
+                        <rect key="frame" x="16" y="142.5" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="BZW-GO-at5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fCH-hj-gip" firstAttribute="leading" secondItem="sY6-e3-tzW" secondAttribute="trailing" constant="8" id="38h-Q4-CP0"/>
+                    <constraint firstItem="v4L-ot-Msx" firstAttribute="leading" secondItem="Qmq-8Q-7PO" secondAttribute="leading" id="4Kk-rJ-oSM"/>
+                    <constraint firstAttribute="trailing" secondItem="fCH-hj-gip" secondAttribute="trailing" constant="16" id="72T-5x-y5L"/>
+                    <constraint firstItem="Tnh-Mh-Uqd" firstAttribute="top" secondItem="Yhi-g4-fml" secondAttribute="bottom" constant="15" id="ANh-SY-WMo"/>
+                    <constraint firstAttribute="bottom" secondItem="Tnh-Mh-Uqd" secondAttribute="bottom" constant="12" id="BEA-DO-kCv"/>
+                    <constraint firstItem="Tnh-Mh-Uqd" firstAttribute="leading" secondItem="v4L-ot-Msx" secondAttribute="leading" id="Jgj-zJ-HHY"/>
+                    <constraint firstAttribute="trailing" secondItem="Tnh-Mh-Uqd" secondAttribute="trailing" id="P4n-OQ-9hc"/>
+                    <constraint firstItem="v4L-ot-Msx" firstAttribute="top" secondItem="Qmq-8Q-7PO" secondAttribute="bottom" constant="8" id="RLB-zY-KXP"/>
+                    <constraint firstItem="sY6-e3-tzW" firstAttribute="leading" secondItem="v4L-ot-Msx" secondAttribute="trailing" constant="8" id="d1F-NR-X3V"/>
+                    <constraint firstItem="Yhi-g4-fml" firstAttribute="trailing" secondItem="fCH-hj-gip" secondAttribute="trailing" id="eQt-j5-Io2"/>
+                    <constraint firstItem="Qmq-8Q-7PO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="h0b-J4-bca"/>
+                    <constraint firstItem="fCH-hj-gip" firstAttribute="centerY" secondItem="sY6-e3-tzW" secondAttribute="centerY" id="hE6-hQ-Czx"/>
+                    <constraint firstItem="Yhi-g4-fml" firstAttribute="top" secondItem="sY6-e3-tzW" secondAttribute="bottom" id="sMV-Tb-PUX"/>
+                    <constraint firstItem="Qmq-8Q-7PO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="w4J-n0-0sm"/>
+                    <constraint firstItem="Yhi-g4-fml" firstAttribute="leading" secondItem="sY6-e3-tzW" secondAttribute="leading" id="yVf-qI-VkW"/>
+                    <constraint firstItem="sY6-e3-tzW" firstAttribute="top" secondItem="v4L-ot-Msx" secondAttribute="top" constant="10" id="zo2-eI-cmk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="detailLabel" destination="Yhi-g4-fml" id="UOI-wa-neR"/>
+                <outlet property="nameLabel" destination="sY6-e3-tzW" id="o8J-Ln-T4S"/>
+                <outlet property="offerSubmittedLabel" destination="Qmq-8Q-7PO" id="k5l-5p-We0"/>
+                <outlet property="profileImageView" destination="v4L-ot-Msx" id="Gd0-3V-i37"/>
+                <outlet property="timeLabel" destination="fCH-hj-gip" id="TBn-7s-Ron"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="108"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_default_image" width="96" height="96"/>
+    </resources>
+</document>

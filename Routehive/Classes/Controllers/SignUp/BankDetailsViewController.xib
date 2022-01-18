@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BankDetailsViewController" customModule="B4_Driver" customModuleProvider="target">
+            <connections>
+                <outlet property="accountNumberTextField" destination="c5M-nU-KWr" id="S34-Xh-vGd"/>
+                <outlet property="accountTitleTextField" destination="yGy-Mi-SD4" id="eIl-sa-rq0"/>
+                <outlet property="bankNameTextField" destination="J5Z-WC-csU" id="IhX-rK-Ug0"/>
+                <outlet property="doneButton" destination="qSB-7x-hdo" id="niS-rg-aOq"/>
+                <outlet property="stepsImageView" destination="OE8-su-DRK" id="9je-IQ-fJ3"/>
+                <outlet property="titleLabel" destination="Qle-Gs-Mzg" id="BOc-2T-etc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup_step_five" translatesAutoresizingMaskIntoConstraints="NO" id="OE8-su-DRK">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="fKW-L2-1jh"/>
+                    </constraints>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ypk-PL-hTg">
+                    <rect key="frame" x="0.0" y="46" width="375" height="621"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WQK-0A-g2Z">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="437"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your bank account details." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qle-Gs-Mzg">
+                                    <rect key="frame" x="16" y="20" width="343" height="20"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSB-7x-hdo" customClass="RoutehiveButton" customModule="B4_Driver" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="373" width="343" height="44"/>
+                                    <color key="backgroundColor" red="0.90196078430000004" green="0.14117647059999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="TMg-G0-sw4"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                    <state key="normal" title="Done">
+                                        <color key="titleColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doneButtonTapped:" destination="-1" eventType="touchUpInside" id="nZ1-BH-9JS"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank_detail" translatesAutoresizingMaskIntoConstraints="NO" id="sHE-p3-mnv">
+                                    <rect key="frame" x="139.5" y="64" width="96" height="96"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCirculer" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bank Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J5Z-WC-csU" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="182" width="343" height="44"/>
+                                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="gMj-0J-HSE"/>
+                                    </constraints>
+                                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bank Account Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yGy-Mi-SD4" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="240" width="343" height="44"/>
+                                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bank Account Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5M-nU-KWr" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="299" width="343" height="44"/>
+                                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="yGy-Mi-SD4" firstAttribute="leading" secondItem="J5Z-WC-csU" secondAttribute="leading" id="2hv-2z-hCr"/>
+                                <constraint firstItem="yGy-Mi-SD4" firstAttribute="trailing" secondItem="J5Z-WC-csU" secondAttribute="trailing" id="6AC-jM-Gwk"/>
+                                <constraint firstAttribute="bottom" secondItem="qSB-7x-hdo" secondAttribute="bottom" constant="20" id="8Sc-F3-L1r"/>
+                                <constraint firstItem="yGy-Mi-SD4" firstAttribute="height" secondItem="J5Z-WC-csU" secondAttribute="height" id="Cek-Bp-pnd"/>
+                                <constraint firstAttribute="trailing" secondItem="J5Z-WC-csU" secondAttribute="trailing" constant="16" id="Cf3-EV-2lW"/>
+                                <constraint firstItem="sHE-p3-mnv" firstAttribute="centerX" secondItem="WQK-0A-g2Z" secondAttribute="centerX" id="FDH-b4-Pdj"/>
+                                <constraint firstItem="sHE-p3-mnv" firstAttribute="top" secondItem="Qle-Gs-Mzg" secondAttribute="bottom" constant="24" id="JaT-pM-Uec"/>
+                                <constraint firstItem="c5M-nU-KWr" firstAttribute="height" secondItem="yGy-Mi-SD4" secondAttribute="height" id="Kja-Cs-NYt"/>
+                                <constraint firstItem="qSB-7x-hdo" firstAttribute="top" secondItem="c5M-nU-KWr" secondAttribute="bottom" constant="30" id="Szx-Rf-6in"/>
+                                <constraint firstItem="c5M-nU-KWr" firstAttribute="trailing" secondItem="yGy-Mi-SD4" secondAttribute="trailing" id="V8D-RV-siu"/>
+                                <constraint firstItem="J5Z-WC-csU" firstAttribute="top" secondItem="sHE-p3-mnv" secondAttribute="bottom" constant="22" id="Xvb-Ug-RZ7"/>
+                                <constraint firstItem="c5M-nU-KWr" firstAttribute="top" secondItem="yGy-Mi-SD4" secondAttribute="bottom" constant="15" id="a95-rF-7XQ"/>
+                                <constraint firstItem="J5Z-WC-csU" firstAttribute="leading" secondItem="WQK-0A-g2Z" secondAttribute="leading" constant="16" id="bg8-6V-gq2"/>
+                                <constraint firstItem="qSB-7x-hdo" firstAttribute="leading" secondItem="WQK-0A-g2Z" secondAttribute="leading" constant="16" id="eQg-Vz-5MI"/>
+                                <constraint firstItem="yGy-Mi-SD4" firstAttribute="top" secondItem="J5Z-WC-csU" secondAttribute="bottom" constant="14" id="grJ-Nk-aMs"/>
+                                <constraint firstItem="Qle-Gs-Mzg" firstAttribute="top" secondItem="WQK-0A-g2Z" secondAttribute="top" constant="20" id="gve-ch-9il"/>
+                                <constraint firstItem="c5M-nU-KWr" firstAttribute="leading" secondItem="yGy-Mi-SD4" secondAttribute="leading" id="jn6-K8-Rwo"/>
+                                <constraint firstItem="Qle-Gs-Mzg" firstAttribute="leading" secondItem="WQK-0A-g2Z" secondAttribute="leading" constant="16" id="nJv-t6-VAb"/>
+                                <constraint firstAttribute="trailing" secondItem="Qle-Gs-Mzg" secondAttribute="trailing" constant="16" id="rYl-GT-GBJ"/>
+                                <constraint firstAttribute="trailing" secondItem="qSB-7x-hdo" secondAttribute="trailing" constant="16" id="yTf-Pa-UFO"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="WQK-0A-g2Z" firstAttribute="leading" secondItem="Ypk-PL-hTg" secondAttribute="leading" id="Aiy-iE-aqX"/>
+                        <constraint firstAttribute="bottom" secondItem="WQK-0A-g2Z" secondAttribute="bottom" id="JG8-Bq-HEr"/>
+                        <constraint firstAttribute="trailing" secondItem="WQK-0A-g2Z" secondAttribute="trailing" id="WAU-Ie-rHW"/>
+                        <constraint firstItem="WQK-0A-g2Z" firstAttribute="top" secondItem="Ypk-PL-hTg" secondAttribute="top" id="pxP-B3-Ch5"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQ5-O3-8J5">
+                    <rect key="frame" x="0.0" y="45" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="fU6-oN-qM0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OE8-su-DRK" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2BI-G4-RjP"/>
+                <constraint firstItem="Ypk-PL-hTg" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="9di-lS-msE"/>
+                <constraint firstItem="Ypk-PL-hTg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="F5Y-jN-VAy"/>
+                <constraint firstItem="OE8-su-DRK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ke1-P9-9RD"/>
+                <constraint firstItem="Ypk-PL-hTg" firstAttribute="top" secondItem="aQ5-O3-8J5" secondAttribute="bottom" id="MEf-3C-RPv"/>
+                <constraint firstItem="aQ5-O3-8J5" firstAttribute="leading" secondItem="OE8-su-DRK" secondAttribute="leading" id="MWu-Xc-mIf"/>
+                <constraint firstItem="aQ5-O3-8J5" firstAttribute="top" secondItem="OE8-su-DRK" secondAttribute="bottom" id="Pq3-4b-jkO"/>
+                <constraint firstItem="OE8-su-DRK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WY1-HG-FAX"/>
+                <constraint firstItem="Ypk-PL-hTg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="a8P-3a-aWo"/>
+                <constraint firstItem="aQ5-O3-8J5" firstAttribute="trailing" secondItem="OE8-su-DRK" secondAttribute="trailing" id="kaZ-pT-beT"/>
+                <constraint firstItem="WQK-0A-g2Z" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="mgK-Pg-kdu"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="bank_detail" width="96" height="96"/>
+        <image name="signup_step_five" width="360" height="28"/>
+    </resources>
+</document>

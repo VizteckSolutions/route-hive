@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-B.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShareRaferralViewController" customModule="B4_Driver" customModuleProvider="target">
+            <connections>
+                <outlet property="copyButton" destination="cf4-CR-0KZ" id="B3X-PE-QI6"/>
+                <outlet property="messageDetailLabel" destination="xay-FB-HXL" id="Ewy-RH-HOT"/>
+                <outlet property="messageTitleLabel" destination="jtA-Ty-17m" id="EWc-VC-agV"/>
+                <outlet property="referralCodeTextField" destination="63x-yy-bWx" id="EwS-Yb-zXy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_share__get_discount" translatesAutoresizingMaskIntoConstraints="NO" id="gxr-KU-ygt">
+                    <rect key="frame" x="90" y="50" width="140" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="dpn-bc-5CK"/>
+                        <constraint firstAttribute="height" constant="140" id="qF4-Oi-CkJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share &amp; Earn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jtA-Ty-17m">
+                    <rect key="frame" x="96" y="200" width="128.5" height="26"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share your code with friends to earn after they signup as a driver using your referral." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xay-FB-HXL">
+                    <rect key="frame" x="16" y="242" width="288" height="59.5"/>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                    <color key="textColor" red="0.14509803921568626" green="0.13725490196078433" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="63x-yy-bWx" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                    <rect key="frame" x="16" y="331.5" width="222" height="44"/>
+                    <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="bjx-9s-RVi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                </textField>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPK-YP-JkS">
+                    <rect key="frame" x="254" y="331.5" width="50" height="44"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="qfP-go-ys1"/>
+                    </constraints>
+                    <state key="normal" image="btn_share"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="shareButtonTapped:" destination="-1" eventType="touchUpInside" id="Qze-xc-l79"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cf4-CR-0KZ">
+                    <rect key="frame" x="178" y="331.5" width="60" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="AJ4-vH-8vX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                    <state key="normal" title="Copy">
+                        <color key="titleColor" red="0.90588235289999997" green="0.14117647059999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="copyButtonTapped:" destination="-1" eventType="touchUpInside" id="4aw-vB-TSb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IPK-YP-JkS" firstAttribute="centerY" secondItem="63x-yy-bWx" secondAttribute="centerY" id="3VR-TR-af8"/>
+                <constraint firstItem="cf4-CR-0KZ" firstAttribute="trailing" secondItem="63x-yy-bWx" secondAttribute="trailing" id="7F6-lu-Ma0"/>
+                <constraint firstItem="jtA-Ty-17m" firstAttribute="top" secondItem="gxr-KU-ygt" secondAttribute="bottom" constant="10" id="Ab2-Cw-d5N"/>
+                <constraint firstItem="xay-FB-HXL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="C8p-sf-l0a"/>
+                <constraint firstItem="gxr-KU-ygt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dx7-XO-urx"/>
+                <constraint firstItem="63x-yy-bWx" firstAttribute="top" secondItem="xay-FB-HXL" secondAttribute="bottom" constant="30" id="Gdi-Id-oQk"/>
+                <constraint firstItem="gxr-KU-ygt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="I02-p8-yG6"/>
+                <constraint firstItem="63x-yy-bWx" firstAttribute="leading" secondItem="xay-FB-HXL" secondAttribute="leading" id="KOI-7G-wx8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IPK-YP-JkS" secondAttribute="trailing" constant="16" id="Zke-zu-uTn"/>
+                <constraint firstItem="xay-FB-HXL" firstAttribute="top" secondItem="jtA-Ty-17m" secondAttribute="bottom" constant="16" id="g1I-Yb-QOq"/>
+                <constraint firstItem="cf4-CR-0KZ" firstAttribute="top" secondItem="63x-yy-bWx" secondAttribute="top" id="iFG-qk-Thd"/>
+                <constraint firstItem="IPK-YP-JkS" firstAttribute="height" secondItem="63x-yy-bWx" secondAttribute="height" id="ig8-fd-eYd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xay-FB-HXL" secondAttribute="trailing" constant="16" id="mZF-d6-qRr"/>
+                <constraint firstItem="jtA-Ty-17m" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rk4-9g-b3K"/>
+                <constraint firstItem="cf4-CR-0KZ" firstAttribute="bottom" secondItem="63x-yy-bWx" secondAttribute="bottom" id="z2E-9D-Ncg"/>
+                <constraint firstItem="IPK-YP-JkS" firstAttribute="leading" secondItem="63x-yy-bWx" secondAttribute="trailing" constant="16" id="zwS-DF-LcK"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_share" width="24" height="24"/>
+        <image name="icon_share__get_discount" width="120" height="120"/>
+    </resources>
+</document>

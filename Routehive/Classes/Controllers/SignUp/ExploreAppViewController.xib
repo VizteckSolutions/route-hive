@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExploreAppViewController" customModule="B4_Driver" customModuleProvider="target">
+            <connections>
+                <outlet property="detailLabel" destination="MTV-Qv-UMF" id="Yxt-Hd-RTs"/>
+                <outlet property="exploreAppButton" destination="afU-SO-618" id="Ags-EM-FUW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTV-Qv-UMF">
+                    <rect key="frame" x="40" y="294" width="295" height="79.5"/>
+                    <string key="text">We are verifying your account by depending on your information. Stay in touch with us, your account will be verified as soon as possible.</string>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="submitted_for_approval" translatesAutoresizingMaskIntoConstraints="NO" id="HH8-id-9sF">
+                    <rect key="frame" x="137.5" y="166" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="B7C-oO-NHX"/>
+                        <constraint firstAttribute="height" constant="100" id="ec6-tG-6in"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCirculer" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afU-SO-618" customClass="RoutehiveButton" customModule="B4_Driver" customModuleProvider="target">
+                    <rect key="frame" x="16" y="423.5" width="343" height="44"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.14117647059999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="0rr-4h-Wdo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                    <state key="normal" title="Explore The App">
+                        <color key="titleColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="exploreAppButtonTapped:" destination="-1" eventType="touchUpInside" id="xON-IJ-Pti"/>
+                    </connections>
+                </button>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OxQ-Di-kBj">
+                    <rect key="frame" x="157.5" y="276" width="60" height="10"/>
+                    <color key="backgroundColor" red="0.83921568627450982" green="0.0" blue="0.015686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="2qu-Q5-Q9t"/>
+                        <constraint firstAttribute="height" constant="10" id="wfv-dS-ff0"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="afU-SO-618" firstAttribute="top" secondItem="MTV-Qv-UMF" secondAttribute="bottom" constant="50" id="1KW-dQ-SJh"/>
+                <constraint firstItem="MTV-Qv-UMF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="IgK-cp-gAE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="afU-SO-618" secondAttribute="trailing" constant="16" id="YnI-EE-mKV"/>
+                <constraint firstItem="OxQ-Di-kBj" firstAttribute="centerX" secondItem="HH8-id-9sF" secondAttribute="centerX" id="aCH-Y8-fQg"/>
+                <constraint firstItem="afU-SO-618" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="bt3-CA-Gy9"/>
+                <constraint firstItem="OxQ-Di-kBj" firstAttribute="top" secondItem="HH8-id-9sF" secondAttribute="bottom" constant="10" id="ey5-6H-Blf"/>
+                <constraint firstItem="MTV-Qv-UMF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="hrV-WV-nj5"/>
+                <constraint firstItem="MTV-Qv-UMF" firstAttribute="top" secondItem="OxQ-Di-kBj" secondAttribute="bottom" constant="8" id="n2T-KB-bOX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MTV-Qv-UMF" secondAttribute="trailing" constant="40" id="rcR-0r-m7Z"/>
+                <constraint firstItem="HH8-id-9sF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zIN-Vb-0Pa"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="submitted_for_approval" width="100" height="100"/>
+    </resources>
+</document>

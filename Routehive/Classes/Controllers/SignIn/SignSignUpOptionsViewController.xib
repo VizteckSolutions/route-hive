@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-M.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignSignUpOptionsViewController" customModule="Routehive" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="4VC-cz-fDv" id="SMR-o4-Zac"/>
+                <outlet property="signUpButton" destination="AfH-q2-9we" id="gWd-pE-7O6"/>
+                <outlet property="subTitleLabel" destination="15g-dW-jNQ" id="wIL-im-2f2"/>
+                <outlet property="titleLabel" destination="FP3-65-4eW" id="W3P-v7-dfj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="xct-j0-xof">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL RIGHTS RESERVED © 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15g-dW-jNQ">
+                    <rect key="frame" x="20" y="625.5" width="335" height="11.5"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="10"/>
+                    <color key="textColor" red="0.83529411760000005" green="0.16078431369999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROUTEHIVE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FP3-65-4eW">
+                    <rect key="frame" x="20" y="610" width="335" height="13.5"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="12"/>
+                    <color key="textColor" red="0.83529411760000005" green="0.16078431369999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PLh-AN-lBO">
+                    <rect key="frame" x="20" y="506" width="335" height="44"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VC-cz-fDv">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="44"/>
+                            <color key="backgroundColor" red="0.83529411760000005" green="0.16078431369999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="ZG4-9h-fHe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="3y8-GN-9wU"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AfH-q2-9we">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="44"/>
+                            <color key="backgroundColor" red="0.83529411760000005" green="0.16078431369999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                            <state key="normal" title="Sign Up">
+                                <color key="titleColor" red="0.33725490196078434" green="0.32941176470588235" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="signUpButtonTapped:" destination="-1" eventType="touchUpInside" id="lyU-jd-Cx0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="AfH-q2-9we" firstAttribute="height" secondItem="4VC-cz-fDv" secondAttribute="height" id="1C5-Xc-gns"/>
+                        <constraint firstItem="4VC-cz-fDv" firstAttribute="width" secondItem="AfH-q2-9we" secondAttribute="width" id="28B-rC-URE"/>
+                    </constraints>
+                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="driver_logo" translatesAutoresizingMaskIntoConstraints="NO" id="8Dp-xI-KCN">
+                    <rect key="frame" x="122.5" y="254.5" width="130.5" height="158"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="15g-dW-jNQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="2tT-TA-TsL"/>
+                <constraint firstItem="PLh-AN-lBO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="2we-wm-LKZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PLh-AN-lBO" secondAttribute="trailing" constant="20" id="3Ap-VD-nvY"/>
+                <constraint firstItem="FP3-65-4eW" firstAttribute="top" secondItem="PLh-AN-lBO" secondAttribute="bottom" constant="60" id="9wZ-OW-GKN"/>
+                <constraint firstItem="15g-dW-jNQ" firstAttribute="trailing" secondItem="FP3-65-4eW" secondAttribute="trailing" id="FX7-s1-UT3"/>
+                <constraint firstItem="xct-j0-xof" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Fd5-KW-MbE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="15g-dW-jNQ" secondAttribute="bottom" constant="30" id="JLQ-lM-Dc5"/>
+                <constraint firstItem="xct-j0-xof" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="KGf-rg-0Fb"/>
+                <constraint firstItem="8Dp-xI-KCN" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="L0u-dw-OYH"/>
+                <constraint firstItem="15g-dW-jNQ" firstAttribute="top" secondItem="FP3-65-4eW" secondAttribute="bottom" constant="2" id="MsX-ok-pKi"/>
+                <constraint firstItem="xct-j0-xof" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="StU-pM-FvM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="15g-dW-jNQ" secondAttribute="trailing" constant="20" id="d9c-XO-fIF"/>
+                <constraint firstItem="8Dp-xI-KCN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eDh-GI-ANJ"/>
+                <constraint firstItem="xct-j0-xof" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="j7w-4K-j7y"/>
+                <constraint firstItem="15g-dW-jNQ" firstAttribute="leading" secondItem="FP3-65-4eW" secondAttribute="leading" id="ohP-Iy-HZK"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="138" y="63"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="375" height="812"/>
+        <image name="driver_logo" width="130.5" height="158"/>
+    </resources>
+</document>

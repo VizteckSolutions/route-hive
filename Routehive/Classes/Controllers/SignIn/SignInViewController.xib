@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-B.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInViewController" customModule="Routehive" customModuleProvider="target">
+            <connections>
+                <outlet property="dontHaveAccountLabel" destination="Ae0-H8-oet" id="CHX-g1-5d6"/>
+                <outlet property="emailTextField" destination="Rse-0T-agS" id="TYD-JO-Apu"/>
+                <outlet property="forgotPasswordButton" destination="zDp-SR-nuK" id="hfw-VO-Kcc"/>
+                <outlet property="loginButton" destination="QyV-83-Mt1" id="tQF-8X-rva"/>
+                <outlet property="passwordTextField" destination="lqQ-fF-8Bg" id="AgL-1H-dw9"/>
+                <outlet property="signupButton" destination="AhJ-Rn-o3M" id="a1w-Gp-F0I"/>
+                <outlet property="subTitleLabel" destination="E4n-am-OQQ" id="CTt-7k-8eo"/>
+                <outlet property="titleLabel" destination="NcB-5V-p6g" id="VPA-eq-b6S"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcB-5V-p6g">
+                    <rect key="frame" x="16" y="50" width="102" height="25"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to your account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4n-am-OQQ">
+                    <rect key="frame" x="16" y="83" width="167" height="19.5"/>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rse-0T-agS" customClass="RoutehiveTextField" customModule="Routehive" customModuleProvider="target">
+                    <rect key="frame" x="16" y="142.5" width="343" height="44"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="nYu-0V-lWr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lqQ-fF-8Bg" customClass="RoutehiveTextField" customModule="Routehive" customModuleProvider="target">
+                    <rect key="frame" x="16" y="202.5" width="343" height="44"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDp-SR-nuK">
+                    <rect key="frame" x="123" y="261.5" width="129" height="30"/>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                    <state key="normal" title="Forgot Password?">
+                        <color key="titleColor" red="0.83529411764705885" green="0.16078431372549021" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="forgetPasswordButtonTapped:" destination="-1" eventType="touchUpInside" id="ZW5-MQ-yhq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyV-83-Mt1" customClass="RoutehiveButton" customModule="Routehive" customModuleProvider="target">
+                    <rect key="frame" x="16" y="316.5" width="343" height="44"/>
+                    <color key="backgroundColor" red="0.83529411760000005" green="0.16078431369999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="HLF-iL-eiA"/>
+                    </connections>
+                </button>
+                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="jfe-AQ-4Ba">
+                    <rect key="frame" x="72.5" y="612" width="230.5" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dont't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae0-H8-oet">
+                            <rect key="frame" x="0.0" y="6" width="173.5" height="18"/>
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhJ-Rn-o3M">
+                            <rect key="frame" x="176.5" y="0.0" width="54" height="30"/>
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                            <state key="normal" title="Sign up">
+                                <color key="titleColor" red="0.83529411760000005" green="0.16078431369999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="signUpButtonTapped:" destination="-1" eventType="touchUpInside" id="l9D-Wn-Njc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jfe-AQ-4Ba" secondAttribute="bottom" constant="25" id="4m5-Yf-dm3"/>
+                <constraint firstItem="E4n-am-OQQ" firstAttribute="leading" secondItem="NcB-5V-p6g" secondAttribute="leading" id="6wC-f5-PyT"/>
+                <constraint firstItem="zDp-SR-nuK" firstAttribute="centerX" secondItem="lqQ-fF-8Bg" secondAttribute="centerX" id="9HO-Yz-oBO"/>
+                <constraint firstItem="QyV-83-Mt1" firstAttribute="top" secondItem="zDp-SR-nuK" secondAttribute="bottom" constant="25" id="F5q-LE-uAi"/>
+                <constraint firstItem="QyV-83-Mt1" firstAttribute="height" secondItem="lqQ-fF-8Bg" secondAttribute="height" id="FVw-dr-vx0"/>
+                <constraint firstItem="NcB-5V-p6g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="GE5-uU-QXa"/>
+                <constraint firstItem="QyV-83-Mt1" firstAttribute="leading" secondItem="lqQ-fF-8Bg" secondAttribute="leading" id="JHr-2r-DtA"/>
+                <constraint firstItem="E4n-am-OQQ" firstAttribute="top" secondItem="NcB-5V-p6g" secondAttribute="bottom" constant="8" id="JUs-r4-tCi"/>
+                <constraint firstItem="lqQ-fF-8Bg" firstAttribute="height" secondItem="Rse-0T-agS" secondAttribute="height" id="Pds-1z-X8A"/>
+                <constraint firstItem="NcB-5V-p6g" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="Qgv-Fq-4yq"/>
+                <constraint firstItem="lqQ-fF-8Bg" firstAttribute="top" secondItem="Rse-0T-agS" secondAttribute="bottom" constant="16" id="WZM-gq-FUh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rse-0T-agS" secondAttribute="trailing" constant="16" id="Yad-oL-TNW"/>
+                <constraint firstItem="QyV-83-Mt1" firstAttribute="trailing" secondItem="lqQ-fF-8Bg" secondAttribute="trailing" id="aK2-O5-GGL"/>
+                <constraint firstItem="lqQ-fF-8Bg" firstAttribute="trailing" secondItem="Rse-0T-agS" secondAttribute="trailing" id="bae-Wb-iRf"/>
+                <constraint firstItem="jfe-AQ-4Ba" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hSI-xD-bi4"/>
+                <constraint firstItem="Rse-0T-agS" firstAttribute="leading" secondItem="E4n-am-OQQ" secondAttribute="leading" id="m3C-3S-5VQ"/>
+                <constraint firstItem="zDp-SR-nuK" firstAttribute="top" secondItem="lqQ-fF-8Bg" secondAttribute="bottom" constant="15" id="p4F-Rh-fjc"/>
+                <constraint firstItem="lqQ-fF-8Bg" firstAttribute="leading" secondItem="Rse-0T-agS" secondAttribute="leading" id="p6n-3n-9m4"/>
+                <constraint firstItem="Rse-0T-agS" firstAttribute="top" secondItem="E4n-am-OQQ" secondAttribute="bottom" constant="40" id="xSq-JV-tBv"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

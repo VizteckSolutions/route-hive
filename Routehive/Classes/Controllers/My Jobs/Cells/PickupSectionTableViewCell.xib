@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="30" id="KGk-i7-Jjw" customClass="PickupSectionTableViewCell" customModule="B4_Driver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="29.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCa-61-Ogn">
+                        <rect key="frame" x="48" y="4" width="61.5" height="21.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pickup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5IU-Vw-njp">
+                                <rect key="frame" x="14" y="3.5" width="33.5" height="15"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50588235290000005" green="0.52156862749999999" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5IU-Vw-njp" secondAttribute="trailing" constant="14" id="6oQ-Me-29b"/>
+                            <constraint firstAttribute="bottom" secondItem="5IU-Vw-njp" secondAttribute="bottom" constant="3" id="ciO-uZ-h7Z"/>
+                            <constraint firstItem="5IU-Vw-njp" firstAttribute="top" secondItem="pCa-61-Ogn" secondAttribute="top" constant="3" id="d89-B3-vs4"/>
+                            <constraint firstItem="5IU-Vw-njp" firstAttribute="leading" secondItem="pCa-61-Ogn" secondAttribute="leading" constant="14" id="p8t-FE-7xR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_pickup_1" translatesAutoresizingMaskIntoConstraints="NO" id="adE-b2-IGu">
+                        <rect key="frame" x="16" y="6.5" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="6Ze-AC-13i"/>
+                        </constraints>
+                    </imageView>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tss-QO-IJ0">
+                        <rect key="frame" x="11" y="2" width="25.5" height="25.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxi-Gd-VE0">
+                                <rect key="frame" x="5" y="6" width="16" height="13.5"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50588235290000005" green="0.52156862749999999" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="26" id="38b-ft-WS6"/>
+                            <constraint firstAttribute="height" constant="26" id="mL3-gF-6YR"/>
+                            <constraint firstItem="fxi-Gd-VE0" firstAttribute="centerY" secondItem="tss-QO-IJ0" secondAttribute="centerY" id="tjg-KT-cfA"/>
+                            <constraint firstItem="fxi-Gd-VE0" firstAttribute="centerX" secondItem="tss-QO-IJ0" secondAttribute="centerX" id="z0D-1W-mxa"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCirculer" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5H-qw-RLB">
+                        <rect key="frame" x="117" y="15.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="11"/>
+                        <color key="textColor" red="0.50980392156862742" green="0.51764705882352935" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_delivered" translatesAutoresizingMaskIntoConstraints="NO" id="g0a-qk-isQ">
+                        <rect key="frame" x="125" y="3" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="mmB-MA-aBt"/>
+                        </constraints>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbg-dy-gEb">
+                        <rect key="frame" x="279" y="0.0" width="25" height="29.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="CVw-au-cmy"/>
+                        </constraints>
+                        <state key="normal" image="icon_view_password"/>
+                        <connections>
+                            <action selector="viewAddressButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Qv1-OV-HTU"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="pCa-61-Ogn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="1S1-qZ-LgG"/>
+                    <constraint firstItem="m5H-qw-RLB" firstAttribute="leading" secondItem="pCa-61-Ogn" secondAttribute="trailing" constant="7.5" id="1yG-Xe-nBg"/>
+                    <constraint firstItem="tss-QO-IJ0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="5Dn-tN-pcc"/>
+                    <constraint firstItem="adE-b2-IGu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5yi-dR-UQo"/>
+                    <constraint firstAttribute="trailing" secondItem="Tbg-dy-gEb" secondAttribute="trailing" constant="16" id="Cg9-TQ-6uk"/>
+                    <constraint firstItem="g0a-qk-isQ" firstAttribute="leading" secondItem="m5H-qw-RLB" secondAttribute="trailing" constant="8" id="DvI-Po-lqz"/>
+                    <constraint firstItem="adE-b2-IGu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Fn6-e4-HwH"/>
+                    <constraint firstItem="m5H-qw-RLB" firstAttribute="centerY" secondItem="pCa-61-Ogn" secondAttribute="centerY" id="HGd-Xv-Qw9"/>
+                    <constraint firstItem="tss-QO-IJ0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Sku-W2-bMg"/>
+                    <constraint firstItem="g0a-qk-isQ" firstAttribute="centerY" secondItem="m5H-qw-RLB" secondAttribute="centerY" id="apt-Uv-goz"/>
+                    <constraint firstAttribute="bottom" secondItem="Tbg-dy-gEb" secondAttribute="bottom" id="gE4-mx-hq5"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="g0a-qk-isQ" secondAttribute="trailing" constant="8" id="hEe-tP-iKe"/>
+                    <constraint firstItem="Tbg-dy-gEb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rnx-7L-PDE"/>
+                    <constraint firstItem="pCa-61-Ogn" firstAttribute="leading" secondItem="adE-b2-IGu" secondAttribute="trailing" constant="16" id="rwe-Kj-tXW"/>
+                    <constraint firstAttribute="bottom" secondItem="pCa-61-Ogn" secondAttribute="bottom" constant="4" id="sKP-OX-yib"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="confirmationTimeLabel" destination="m5H-qw-RLB" id="37f-zk-ogc"/>
+                <outlet property="locationIndexLabel" destination="fxi-Gd-VE0" id="Clh-wt-hHl"/>
+                <outlet property="locationIndexView" destination="tss-QO-IJ0" id="RZg-ij-5L9"/>
+                <outlet property="pickupLabel" destination="5IU-Vw-njp" id="1kJ-OW-Pkz"/>
+                <outlet property="pickupView" destination="pCa-61-Ogn" id="K64-qa-NcQ"/>
+                <outlet property="sourceIconImageView" destination="adE-b2-IGu" id="Gkc-tN-sb9"/>
+                <outlet property="tickImageView" destination="g0a-qk-isQ" id="yiO-TR-rpF"/>
+                <outlet property="viewAddressButton" destination="Tbg-dy-gEb" id="qxN-xe-bGv"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="43"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_delivered" width="24" height="24"/>
+        <image name="icon_pickup_1" width="16" height="16"/>
+        <image name="icon_view_password" width="16" height="16"/>
+    </resources>
+</document>

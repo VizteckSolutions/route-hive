@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VehicleInfoViewController" customModule="B4_Driver" customModuleProvider="target">
+            <connections>
+                <outlet property="companyNameTextField" destination="IvO-LG-pMz" id="9oO-0c-hDF"/>
+                <outlet property="companyRegistrationNumberTextField" destination="9G3-VO-zA2" id="EOE-zd-51f"/>
+                <outlet property="infoBackupDriverButton" destination="QNT-Qc-AXh" id="ejR-Pe-G1G"/>
+                <outlet property="inspectionExpiryDateTextField" destination="N7y-np-g9w" id="YUl-bp-zb0"/>
+                <outlet property="inspectionFrontImageView" destination="D37-1c-9gi" id="dtV-1r-rcN"/>
+                <outlet property="inspectionFrontSideLabel" destination="HEM-vh-GnN" id="7b7-lY-fRS"/>
+                <outlet property="inspectionSideAActivityIndicator" destination="9gW-d4-tG7" id="0px-7e-p6G"/>
+                <outlet property="inspectionSideAButton" destination="kIb-EW-dFK" id="mVX-gX-mum"/>
+                <outlet property="inspectionView" destination="JrX-9C-Bed" id="MeB-it-b36"/>
+                <outlet property="insuranceExpiryTextField" destination="Uf3-Ta-CK9" id="dUw-Ut-xJC"/>
+                <outlet property="insuranceFrontImageView" destination="Ks5-Pu-OkN" id="VX5-kp-ztn"/>
+                <outlet property="insuranceFrontSideLabel" destination="ixb-Qc-jQV" id="ikJ-Qz-PZ9"/>
+                <outlet property="insuranceSideAActivityIndicator" destination="TQ3-kg-ebE" id="iFy-Fi-5x2"/>
+                <outlet property="insuranceSideAButton" destination="SI6-tH-6ni" id="b1v-eE-tk9"/>
+                <outlet property="insuranceView" destination="2ik-3M-ZbW" id="mTv-ej-Bad"/>
+                <outlet property="manufacturerFieldTopConstraint" destination="JOY-1Y-gZ0" id="92K-dM-g7i"/>
+                <outlet property="manufaturerTextField" destination="Nda-bB-sSu" id="HAH-X9-iOs"/>
+                <outlet property="modelTextField" destination="mNB-nX-olS" id="Vo1-c7-mZZ"/>
+                <outlet property="nextButton" destination="fIF-qC-VPq" id="si7-0V-Ddv"/>
+                <outlet property="optBackupDriverButton" destination="g7Y-On-rkG" id="icg-Er-Pi7"/>
+                <outlet property="personalFieldsTopConstraint" destination="4TS-gu-vkY" id="mdp-jg-j08"/>
+                <outlet property="registrationFrontImageView" destination="a4A-XV-v8c" id="ivf-K7-hzX"/>
+                <outlet property="registrationFrontSideLabel" destination="Ov6-Sk-xRi" id="7IE-07-JRH"/>
+                <outlet property="registrationSideAActivityIndicator" destination="Hg6-yW-dLs" id="gIY-Br-ZMR"/>
+                <outlet property="registrationSideAButton" destination="Sgo-P5-Ocv" id="Mc9-cG-Ype"/>
+                <outlet property="registrationView" destination="f2f-Ss-Mie" id="GrU-K9-Flm"/>
+                <outlet property="stepsImageView" destination="7WW-Pe-ckA" id="czP-0h-LZP"/>
+                <outlet property="titleLabel" destination="6Xi-wM-rgR" id="HU1-GE-4zX"/>
+                <outlet property="vehicleColorTextField" destination="bAw-wM-feh" id="57z-hd-kfP"/>
+                <outlet property="vehicleInspectionCoverLabel" destination="Q3L-4F-JrE" id="IfW-dC-fLd"/>
+                <outlet property="vehicleInsuranceCoverLabel" destination="Vay-pD-NaZ" id="7pQ-mz-zbg"/>
+                <outlet property="vehicleOwnerShipTextField" destination="5Dt-AN-Qq7" id="aJd-7p-qaq"/>
+                <outlet property="vehiclePlateNumberTextField" destination="CyQ-dC-Yzo" id="fF8-r1-KLg"/>
+                <outlet property="vehicleRegistrationCardLabel" destination="RUE-Q4-Rd2" id="Gky-7Q-Y6H"/>
+                <outlet property="vehicleTypeTextField" destination="hpa-u4-Wb5" id="yRr-Zv-2JO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1517"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yO3-Xa-Rjy">
+                    <rect key="frame" x="0.0" y="46" width="375" height="1471"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4s-fD-gAX">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="473"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provide us your vehicle information for verification purpose." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xi-wM-rgR">
+                                    <rect key="frame" x="16" y="20" width="343" height="40"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIF-qC-VPq" customClass="RoutehiveButton" customModule="B4_Driver" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="409" width="343" height="44"/>
+                                    <color key="backgroundColor" red="0.90196078430000004" green="0.14117647059999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="RhI-qF-tZx"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                    <state key="normal" title="Next">
+                                        <color key="titleColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="nextButtonTapped:" destination="-1" eventType="touchUpInside" id="mN4-bC-Dbb"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vehicale_info" translatesAutoresizingMaskIntoConstraints="NO" id="MJH-2l-cf8">
+                                    <rect key="frame" x="139.5" y="84" width="96" height="96"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCirculer" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9JM-7o-nnj">
+                                    <rect key="frame" x="16" y="349" width="343" height="0.0"/>
+                                    <subviews>
+                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2f-Ss-Mie">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="220"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgo-P5-Ocv">
+                                                    <rect key="frame" x="91" y="57.5" width="160" height="159.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="160" id="aZW-Ap-L8d"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="registrationSideAButtonTapped:" destination="-1" eventType="touchUpInside" id="JUi-hq-Yw6"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="upload_front_side" translatesAutoresizingMaskIntoConstraints="NO" id="a4A-XV-v8c">
+                                                    <rect key="frame" x="91.5" y="57.5" width="160" height="159.5"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle registration card (Garden)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUE-Q4-Rd2">
+                                                    <rect key="frame" x="0.0" y="20" width="222" height="17.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Front Side" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ov6-Sk-xRi">
+                                                    <rect key="frame" x="144" y="164" width="55.5" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" red="0.58823529411764708" green="0.59607843137254901" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Hg6-yW-dLs">
+                                                    <rect key="frame" x="153" y="119" width="37" height="37"/>
+                                                    <color key="color" red="0.1541518271" green="0.3241622448" blue="0.49538707729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Ov6-Sk-xRi" firstAttribute="top" secondItem="Hg6-yW-dLs" secondAttribute="bottom" constant="8" id="9og-yb-7La"/>
+                                                <constraint firstItem="RUE-Q4-Rd2" firstAttribute="leading" secondItem="f2f-Ss-Mie" secondAttribute="leading" id="9uR-8V-8Vx"/>
+                                                <constraint firstItem="a4A-XV-v8c" firstAttribute="leading" secondItem="Sgo-P5-Ocv" secondAttribute="leading" id="Ar4-AY-gIj"/>
+                                                <constraint firstItem="RUE-Q4-Rd2" firstAttribute="top" secondItem="f2f-Ss-Mie" secondAttribute="top" constant="20" id="FCR-ME-eaK"/>
+                                                <constraint firstItem="a4A-XV-v8c" firstAttribute="bottom" secondItem="Sgo-P5-Ocv" secondAttribute="bottom" id="Fym-18-inx"/>
+                                                <constraint firstAttribute="height" constant="220" id="GcZ-fV-Fz2"/>
+                                                <constraint firstItem="Hg6-yW-dLs" firstAttribute="centerX" secondItem="Sgo-P5-Ocv" secondAttribute="centerX" id="Hyt-Ng-44s"/>
+                                                <constraint firstItem="Sgo-P5-Ocv" firstAttribute="centerX" secondItem="f2f-Ss-Mie" secondAttribute="centerX" id="Jpq-LK-Kdy"/>
+                                                <constraint firstItem="a4A-XV-v8c" firstAttribute="top" secondItem="Sgo-P5-Ocv" secondAttribute="top" id="KFJ-gu-Pdm"/>
+                                                <constraint firstItem="Sgo-P5-Ocv" firstAttribute="top" secondItem="RUE-Q4-Rd2" secondAttribute="bottom" constant="20" id="O5Z-qt-ENe"/>
+                                                <constraint firstItem="Hg6-yW-dLs" firstAttribute="centerY" secondItem="Sgo-P5-Ocv" secondAttribute="centerY" id="Qia-Ap-dcZ"/>
+                                                <constraint firstItem="a4A-XV-v8c" firstAttribute="trailing" secondItem="Sgo-P5-Ocv" secondAttribute="trailing" id="bAP-t3-GwR"/>
+                                                <constraint firstAttribute="bottom" secondItem="Sgo-P5-Ocv" secondAttribute="bottom" constant="3" id="ofY-ll-kEn"/>
+                                                <constraint firstItem="Ov6-Sk-xRi" firstAttribute="centerX" secondItem="Hg6-yW-dLs" secondAttribute="centerX" id="ogV-Es-1Jp"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vehicle's Ownership" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Dt-AN-Qq7" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="216" width="343" height="44"/>
+                                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="s6J-7d-QCc"/>
+                                    </constraints>
+                                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vehicle Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hpa-u4-Wb5" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="275" width="343" height="44"/>
+                                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lkK-ZG-Miw">
+                                    <rect key="frame" x="16" y="349" width="343" height="0.0"/>
+                                    <subviews>
+                                        <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IvO-LG-pMz" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="44"/>
+                                            <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="tt3-ng-xfQ"/>
+                                            </constraints>
+                                            <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company Registration Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9G3-VO-zA2" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="44"/>
+                                            <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="9G3-VO-zA2" firstAttribute="height" secondItem="IvO-LG-pMz" secondAttribute="height" id="ob8-ey-etD"/>
+                                    </constraints>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7Y-On-rkG">
+                                    <rect key="frame" x="16" y="369" width="190" height="20"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-10" maxY="0.0"/>
+                                    <state key="normal" title="Opt in for backup driver" image="checkbox">
+                                        <color key="titleColor" red="0.35294117647058826" green="0.34901960784313724" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="optBackupDriverButtonTapped:" destination="-1" eventType="touchUpInside" id="48l-3C-24p"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNT-Qc-AXh">
+                                    <rect key="frame" x="216" y="368" width="22" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="22" id="flX-Q3-n7U"/>
+                                        <constraint firstAttribute="height" constant="22" id="u3K-l5-f4B"/>
+                                    </constraints>
+                                    <state key="normal" image="icon_info"/>
+                                    <connections>
+                                        <action selector="infoBackupDriverButtonTapped:" destination="-1" eventType="touchUpInside" id="bcm-eR-Yb9"/>
+                                    </connections>
+                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nh8-n8-UhG">
+                                    <rect key="frame" x="16" y="349" width="343" height="0.0"/>
+                                    <subviews>
+                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JrX-9C-Bed">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="285"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload_front_side" translatesAutoresizingMaskIntoConstraints="NO" id="D37-1c-9gi">
+                                                    <rect key="frame" x="91.5" y="57.5" width="160" height="160"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle inspection cover Note/other." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3L-4F-JrE">
+                                                    <rect key="frame" x="0.0" y="20" width="241.5" height="17.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="9gW-d4-tG7">
+                                                    <rect key="frame" x="153" y="119" width="37" height="37"/>
+                                                    <color key="color" red="0.1541518271" green="0.3241622448" blue="0.49538707729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </activityIndicatorView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIb-EW-dFK">
+                                                    <rect key="frame" x="91.5" y="57.5" width="160" height="160"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="160" id="OzN-Vn-Laf"/>
+                                                        <constraint firstAttribute="height" constant="160" id="zdO-Ni-YMp"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="inspectionSideAButtonTapped:" destination="-1" eventType="touchUpInside" id="hMn-ki-wHA"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front Side" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEM-vh-GnN">
+                                                    <rect key="frame" x="144" y="164" width="55.5" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" red="0.58823529409999997" green="0.59607843140000005" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inspection Cover Expiry Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N7y-np-g9w" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="232.5" width="343" height="44"/>
+                                                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="dYX-Xa-eI7"/>
+                                                    </constraints>
+                                                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="D37-1c-9gi" firstAttribute="leading" secondItem="kIb-EW-dFK" secondAttribute="leading" id="1NQ-oN-thX"/>
+                                                <constraint firstItem="D37-1c-9gi" firstAttribute="trailing" secondItem="kIb-EW-dFK" secondAttribute="trailing" id="5xN-6o-KL7"/>
+                                                <constraint firstAttribute="height" constant="285" id="6aC-Y6-fiY"/>
+                                                <constraint firstAttribute="trailing" secondItem="N7y-np-g9w" secondAttribute="trailing" id="821-5m-lUb"/>
+                                                <constraint firstItem="N7y-np-g9w" firstAttribute="leading" secondItem="JrX-9C-Bed" secondAttribute="leading" id="8w7-am-8ne"/>
+                                                <constraint firstItem="D37-1c-9gi" firstAttribute="bottom" secondItem="kIb-EW-dFK" secondAttribute="bottom" id="9R0-sg-2p2"/>
+                                                <constraint firstItem="N7y-np-g9w" firstAttribute="top" secondItem="D37-1c-9gi" secondAttribute="bottom" constant="15" id="RTv-08-ncP"/>
+                                                <constraint firstItem="9gW-d4-tG7" firstAttribute="centerX" secondItem="kIb-EW-dFK" secondAttribute="centerX" id="Ugq-XY-e3V"/>
+                                                <constraint firstItem="HEM-vh-GnN" firstAttribute="top" secondItem="9gW-d4-tG7" secondAttribute="bottom" constant="8" id="V9J-lN-YXO"/>
+                                                <constraint firstItem="kIb-EW-dFK" firstAttribute="top" secondItem="Q3L-4F-JrE" secondAttribute="bottom" constant="20" id="bmu-tr-oWa"/>
+                                                <constraint firstItem="kIb-EW-dFK" firstAttribute="centerX" secondItem="JrX-9C-Bed" secondAttribute="centerX" id="d2c-jH-bGi"/>
+                                                <constraint firstItem="Q3L-4F-JrE" firstAttribute="top" secondItem="JrX-9C-Bed" secondAttribute="top" constant="20" id="ehm-4X-4ps"/>
+                                                <constraint firstItem="HEM-vh-GnN" firstAttribute="centerX" secondItem="9gW-d4-tG7" secondAttribute="centerX" id="kyM-SB-y6p"/>
+                                                <constraint firstItem="Q3L-4F-JrE" firstAttribute="leading" secondItem="JrX-9C-Bed" secondAttribute="leading" id="lDB-23-Jj2"/>
+                                                <constraint firstItem="9gW-d4-tG7" firstAttribute="centerY" secondItem="kIb-EW-dFK" secondAttribute="centerY" id="pBT-zV-Qde"/>
+                                                <constraint firstItem="D37-1c-9gi" firstAttribute="top" secondItem="kIb-EW-dFK" secondAttribute="top" id="xhY-0a-BwK"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1xt-q1-QQy">
+                                    <rect key="frame" x="16" y="349" width="343" height="0.0"/>
+                                    <subviews>
+                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ik-3M-ZbW">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="285"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle insurance cover Note." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vay-pD-NaZ">
+                                                    <rect key="frame" x="0.0" y="20" width="199" height="17.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload_front_side" translatesAutoresizingMaskIntoConstraints="NO" id="Ks5-Pu-OkN">
+                                                    <rect key="frame" x="91.5" y="57.5" width="160" height="160"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="TQ3-kg-ebE">
+                                                    <rect key="frame" x="153" y="119" width="37" height="37"/>
+                                                    <color key="color" red="0.1541518271" green="0.3241622448" blue="0.49538707729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </activityIndicatorView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SI6-tH-6ni">
+                                                    <rect key="frame" x="91.5" y="57.5" width="160" height="160"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="160" id="JLq-4x-hU3"/>
+                                                        <constraint firstAttribute="width" constant="160" id="nl8-sK-5U8"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="insuranceSideAButtonTapped:" destination="-1" eventType="touchUpInside" id="0n6-qg-Gk8"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front Side" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixb-Qc-jQV">
+                                                    <rect key="frame" x="144" y="164" width="55.5" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" red="0.58823529409999997" green="0.59607843140000005" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insurance Cover Expiry Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uf3-Ta-CK9" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="232.5" width="343" height="44"/>
+                                                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="rEP-Hf-W0H"/>
+                                                    </constraints>
+                                                    <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="TQ3-kg-ebE" firstAttribute="centerY" secondItem="SI6-tH-6ni" secondAttribute="centerY" id="6IJ-l5-CBS"/>
+                                                <constraint firstItem="ixb-Qc-jQV" firstAttribute="centerX" secondItem="TQ3-kg-ebE" secondAttribute="centerX" id="BJh-Vb-sPG"/>
+                                                <constraint firstItem="TQ3-kg-ebE" firstAttribute="centerX" secondItem="SI6-tH-6ni" secondAttribute="centerX" id="Eng-Dz-o4O"/>
+                                                <constraint firstAttribute="height" constant="285" id="NJ9-nt-ATw"/>
+                                                <constraint firstItem="SI6-tH-6ni" firstAttribute="centerX" secondItem="2ik-3M-ZbW" secondAttribute="centerX" id="PeA-Bz-oa2"/>
+                                                <constraint firstItem="SI6-tH-6ni" firstAttribute="top" secondItem="Vay-pD-NaZ" secondAttribute="bottom" constant="20" id="Qpp-rN-BYM"/>
+                                                <constraint firstItem="Uf3-Ta-CK9" firstAttribute="leading" secondItem="2ik-3M-ZbW" secondAttribute="leading" id="TY8-lo-jVp"/>
+                                                <constraint firstItem="Ks5-Pu-OkN" firstAttribute="trailing" secondItem="SI6-tH-6ni" secondAttribute="trailing" id="WRf-Ya-hQw"/>
+                                                <constraint firstItem="Ks5-Pu-OkN" firstAttribute="leading" secondItem="SI6-tH-6ni" secondAttribute="leading" id="XM4-dd-KzY"/>
+                                                <constraint firstItem="Ks5-Pu-OkN" firstAttribute="bottom" secondItem="SI6-tH-6ni" secondAttribute="bottom" id="YTu-N0-kRH"/>
+                                                <constraint firstItem="Uf3-Ta-CK9" firstAttribute="top" secondItem="SI6-tH-6ni" secondAttribute="bottom" constant="15" id="aHy-V5-Vhb"/>
+                                                <constraint firstItem="ixb-Qc-jQV" firstAttribute="top" secondItem="TQ3-kg-ebE" secondAttribute="bottom" constant="8" id="dLc-wb-Hic"/>
+                                                <constraint firstItem="Ks5-Pu-OkN" firstAttribute="top" secondItem="SI6-tH-6ni" secondAttribute="top" id="jAP-xg-zxn"/>
+                                                <constraint firstItem="Vay-pD-NaZ" firstAttribute="leading" secondItem="2ik-3M-ZbW" secondAttribute="leading" id="kR7-1N-RQ6"/>
+                                                <constraint firstAttribute="trailing" secondItem="Uf3-Ta-CK9" secondAttribute="trailing" id="mow-l9-KOv"/>
+                                                <constraint firstItem="Vay-pD-NaZ" firstAttribute="top" secondItem="2ik-3M-ZbW" secondAttribute="top" constant="20" id="paH-36-M6q"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ei7-JC-MbJ">
+                                    <rect key="frame" x="16" y="349" width="343" height="0.0"/>
+                                    <subviews>
+                                        <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vehicle Plate Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CyQ-dC-Yzo" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="181.5" height="44"/>
+                                            <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="URV-fY-qw4"/>
+                                            </constraints>
+                                            <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                        </textField>
+                                        <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vehicle Color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bAw-wM-feh" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="181.5" height="44"/>
+                                            <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="bAw-wM-feh" firstAttribute="height" secondItem="CyQ-dC-Yzo" secondAttribute="height" id="s42-6H-pKU"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cZJ-gj-twZ">
+                                    <rect key="frame" x="16" y="334" width="343" height="0.0"/>
+                                    <subviews>
+                                        <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Manufacturer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nda-bB-sSu" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="123.5" height="44"/>
+                                            <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Model" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mNB-nX-olS" customClass="RoutehiveTextField" customModule="B4_Driver" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="123.5" height="44"/>
+                                            <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="mtG-CX-1tQ"/>
+                                            </constraints>
+                                            <color key="textColor" red="0.1450980392" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Nda-bB-sSu" firstAttribute="height" secondItem="mNB-nX-olS" secondAttribute="height" id="93N-64-V5F"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="g7Y-On-rkG" firstAttribute="leading" secondItem="5Dt-AN-Qq7" secondAttribute="leading" id="2Gl-z4-47q"/>
+                                <constraint firstAttribute="trailing" secondItem="5Dt-AN-Qq7" secondAttribute="trailing" constant="16" id="3CR-Ev-Kcu"/>
+                                <constraint firstItem="9JM-7o-nnj" firstAttribute="top" secondItem="ei7-JC-MbJ" secondAttribute="bottom" id="3se-M5-rFm"/>
+                                <constraint firstItem="ei7-JC-MbJ" firstAttribute="top" secondItem="lkK-ZG-Miw" secondAttribute="bottom" id="4TS-gu-vkY"/>
+                                <constraint firstItem="nh8-n8-UhG" firstAttribute="leading" secondItem="5Dt-AN-Qq7" secondAttribute="leading" id="6JP-Ok-TF6"/>
+                                <constraint firstAttribute="trailing" secondItem="fIF-qC-VPq" secondAttribute="trailing" constant="16" id="7bk-ki-IsO"/>
+                                <constraint firstItem="1xt-q1-QQy" firstAttribute="top" secondItem="9JM-7o-nnj" secondAttribute="bottom" id="Ayd-5T-0II"/>
+                                <constraint firstItem="g7Y-On-rkG" firstAttribute="top" secondItem="nh8-n8-UhG" secondAttribute="bottom" constant="20" id="BfS-wb-nx0"/>
+                                <constraint firstItem="1xt-q1-QQy" firstAttribute="trailing" secondItem="5Dt-AN-Qq7" secondAttribute="trailing" id="Ck8-ag-0hn"/>
+                                <constraint firstItem="fIF-qC-VPq" firstAttribute="top" secondItem="g7Y-On-rkG" secondAttribute="bottom" constant="20" id="DTJ-hD-TOU"/>
+                                <constraint firstItem="hpa-u4-Wb5" firstAttribute="trailing" secondItem="5Dt-AN-Qq7" secondAttribute="trailing" id="EoH-FE-MvQ"/>
+                                <constraint firstItem="6Xi-wM-rgR" firstAttribute="top" secondItem="q4s-fD-gAX" secondAttribute="top" constant="20" id="G1h-Mh-DNz"/>
+                                <constraint firstItem="9JM-7o-nnj" firstAttribute="leading" secondItem="5Dt-AN-Qq7" secondAttribute="leading" id="Hob-Bv-ZCs"/>
+                                <constraint firstItem="cZJ-gj-twZ" firstAttribute="top" secondItem="hpa-u4-Wb5" secondAttribute="bottom" constant="15" id="JOY-1Y-gZ0"/>
+                                <constraint firstItem="hpa-u4-Wb5" firstAttribute="top" secondItem="5Dt-AN-Qq7" secondAttribute="bottom" constant="15" id="JjL-0s-nN2"/>
+                                <constraint firstItem="5Dt-AN-Qq7" firstAttribute="leading" secondItem="q4s-fD-gAX" secondAttribute="leading" constant="16" id="NhR-ff-qZO"/>
+                                <constraint firstItem="QNT-Qc-AXh" firstAttribute="centerY" secondItem="g7Y-On-rkG" secondAttribute="centerY" id="O4a-1x-47N"/>
+                                <constraint firstItem="MJH-2l-cf8" firstAttribute="top" secondItem="6Xi-wM-rgR" secondAttribute="bottom" constant="24" id="Pgm-FN-wYO"/>
+                                <constraint firstAttribute="bottom" secondItem="fIF-qC-VPq" secondAttribute="bottom" constant="20" id="R57-D9-bhh"/>
+                                <constraint firstItem="5Dt-AN-Qq7" firstAttribute="top" secondItem="MJH-2l-cf8" secondAttribute="bottom" constant="36" id="S1s-ty-GnF"/>
+                                <constraint firstItem="cZJ-gj-twZ" firstAttribute="trailing" secondItem="5Dt-AN-Qq7" secondAttribute="trailing" id="S3y-Cs-I9k"/>
+                                <constraint firstItem="MJH-2l-cf8" firstAttribute="centerX" secondItem="q4s-fD-gAX" secondAttribute="centerX" id="UwY-lz-2j5"/>
+                                <constraint firstItem="ei7-JC-MbJ" firstAttribute="trailing" secondItem="5Dt-AN-Qq7" secondAttribute="trailing" id="VHf-3t-jTT"/>
+                                <constraint firstItem="hpa-u4-Wb5" firstAttribute="height" secondItem="5Dt-AN-Qq7" secondAttribute="height" id="Vhb-Qj-Ln1"/>
+                                <constraint firstItem="fIF-qC-VPq" firstAttribute="leading" secondItem="q4s-fD-gAX" secondAttribute="leading" constant="16" id="W2I-1S-2nL"/>
+                                <constraint firstItem="ei7-JC-MbJ" firstAttribute="leading" secondItem="5Dt-AN-Qq7" secondAttribute="leading" id="a5c-Za-2Pu"/>
+                                <constraint firstItem="QNT-Qc-AXh" firstAttribute="leading" secondItem="g7Y-On-rkG" secondAttribute="trailing" constant="10" id="fS4-nE-xQI"/>
+                                <constraint firstItem="6Xi-wM-rgR" firstAttribute="leading" secondItem="q4s-fD-gAX" secondAttribute="leading" constant="16" id="iJF-0O-p0P"/>
+                                <constraint firstItem="nh8-n8-UhG" firstAttribute="trailing" secondItem="5Dt-AN-Qq7" secondAttribute="trailing" id="kUQ-e5-cqx"/>
+                                <constraint firstItem="9JM-7o-nnj" firstAttribute="trailing" secondItem="5Dt-AN-Qq7" secondAttribute="trailing" id="kVa-mT-mYk"/>
+                                <constraint firstItem="1xt-q1-QQy" firstAttribute="leading" secondItem="5Dt-AN-Qq7" secondAttribute="leading" id="oDy-gl-2gZ"/>
+                                <constraint firstItem="lkK-ZG-Miw" firstAttribute="trailing" secondItem="5Dt-AN-Qq7" secondAttribute="trailing" id="p6W-37-si2"/>
+                                <constraint firstItem="cZJ-gj-twZ" firstAttribute="leading" secondItem="5Dt-AN-Qq7" secondAttribute="leading" id="pJb-lS-fQm"/>
+                                <constraint firstItem="hpa-u4-Wb5" firstAttribute="leading" secondItem="5Dt-AN-Qq7" secondAttribute="leading" id="qlv-hc-Y33"/>
+                                <constraint firstAttribute="trailing" secondItem="6Xi-wM-rgR" secondAttribute="trailing" constant="16" id="rVP-5q-gRC"/>
+                                <constraint firstItem="nh8-n8-UhG" firstAttribute="top" secondItem="1xt-q1-QQy" secondAttribute="bottom" id="tLO-3o-aXQ"/>
+                                <constraint firstItem="lkK-ZG-Miw" firstAttribute="top" secondItem="cZJ-gj-twZ" secondAttribute="bottom" constant="15" id="vIf-E0-iTR"/>
+                                <constraint firstItem="lkK-ZG-Miw" firstAttribute="leading" secondItem="5Dt-AN-Qq7" secondAttribute="leading" id="vX5-LR-aqR"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="q4s-fD-gAX" secondAttribute="bottom" id="JYU-aB-cer"/>
+                        <constraint firstAttribute="trailing" secondItem="q4s-fD-gAX" secondAttribute="trailing" id="UZu-sd-D5Z"/>
+                        <constraint firstItem="q4s-fD-gAX" firstAttribute="leading" secondItem="yO3-Xa-Rjy" secondAttribute="leading" id="hzH-fS-oO0"/>
+                        <constraint firstItem="q4s-fD-gAX" firstAttribute="top" secondItem="yO3-Xa-Rjy" secondAttribute="top" id="wOi-4u-EaA"/>
+                    </constraints>
+                </scrollView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup_step_two" translatesAutoresizingMaskIntoConstraints="NO" id="7WW-Pe-ckA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="2yJ-IO-Qhw"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6a-dX-yiq">
+                    <rect key="frame" x="0.0" y="45" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="0Sn-c5-GhF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yO3-Xa-Rjy" secondAttribute="bottom" id="7EE-Qg-mNB"/>
+                <constraint firstItem="7WW-Pe-ckA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CdQ-Ha-1dM"/>
+                <constraint firstItem="s6a-dX-yiq" firstAttribute="trailing" secondItem="7WW-Pe-ckA" secondAttribute="trailing" id="GCI-46-Ae0"/>
+                <constraint firstItem="7WW-Pe-ckA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="McS-Pq-sAd"/>
+                <constraint firstItem="q4s-fD-gAX" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="TDZ-FY-KQm"/>
+                <constraint firstItem="yO3-Xa-Rjy" firstAttribute="top" secondItem="s6a-dX-yiq" secondAttribute="bottom" id="Yh4-3t-KI1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7WW-Pe-ckA" secondAttribute="trailing" id="etp-i7-D7p"/>
+                <constraint firstItem="s6a-dX-yiq" firstAttribute="top" secondItem="7WW-Pe-ckA" secondAttribute="bottom" id="iAz-IC-Wrh"/>
+                <constraint firstItem="yO3-Xa-Rjy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qc7-uK-Mgi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yO3-Xa-Rjy" secondAttribute="trailing" id="rHf-qy-4ak"/>
+                <constraint firstItem="s6a-dX-yiq" firstAttribute="leading" secondItem="7WW-Pe-ckA" secondAttribute="leading" id="ypP-Pg-rF5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="26.5" y="496.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkbox" width="20" height="20"/>
+        <image name="icon_info" width="16" height="16"/>
+        <image name="signup_step_two" width="360" height="28"/>
+        <image name="upload_front_side" width="160" height="160"/>
+        <image name="vehicale_info" width="96" height="96"/>
+    </resources>
+</document>

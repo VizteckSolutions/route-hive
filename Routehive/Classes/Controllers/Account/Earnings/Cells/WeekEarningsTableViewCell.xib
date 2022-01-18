@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-B.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-M.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="135" id="KGk-i7-Jjw" customClass="WeekEarningsTableViewCell" customModule="B4_Driver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="134.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RM 380.64" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJL-vN-mQJ">
+                        <rect key="frame" x="16" y="10" width="137" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="1ea-wo-Gye"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="28"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNW-Jd-Cfh">
+                        <rect key="frame" x="8" y="92.5" width="304" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="sxX-cf-bHE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="17"/>
+                        <inset key="imageEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="Sep 23, 2018 - Sep 29, 2018 " image="arrow_right">
+                            <color key="titleColor" red="0.6588235294117647" green="0.6705882352941176" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="selectedWeekButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xc0-K1-kMn"/>
+                        </connections>
+                    </button>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K9e-Md-c7v">
+                        <rect key="frame" x="10" y="133.5" width="300" height="1"/>
+                        <color key="backgroundColor" red="0.89022880792617798" green="0.90465563535690308" blue="0.92137455940246582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="fRh-cu-w6P"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(20 Jobs)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qz-Vf-n3N">
+                        <rect key="frame" x="16" y="50" width="67.5" height="22.5"/>
+                        <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="16"/>
+                        <color key="textColor" red="0.6588235294" green="0.6705882353" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNJ-eg-rWt">
+                        <rect key="frame" x="204" y="10" width="100" height="40"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="li0-Fm-aHd"/>
+                            <constraint firstAttribute="height" constant="40" id="qbC-2F-QWk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="Weekly   " image="arrow_down">
+                            <color key="titleColor" red="0.20784313725490197" green="0.20392156862745098" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="K9e-Md-c7v" secondAttribute="trailing" constant="10" id="3dV-2b-Aqj"/>
+                    <constraint firstAttribute="bottom" secondItem="K9e-Md-c7v" secondAttribute="bottom" id="3lv-SX-1qY"/>
+                    <constraint firstItem="zNW-Jd-Cfh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="DTf-Eq-7hT"/>
+                    <constraint firstItem="zNW-Jd-Cfh" firstAttribute="top" secondItem="3qz-Vf-n3N" secondAttribute="bottom" constant="20" id="HC7-3q-LYn"/>
+                    <constraint firstItem="fNJ-eg-rWt" firstAttribute="centerY" secondItem="rJL-vN-mQJ" secondAttribute="centerY" id="YtC-Db-fp1"/>
+                    <constraint firstItem="K9e-Md-c7v" firstAttribute="top" secondItem="zNW-Jd-Cfh" secondAttribute="bottom" constant="11" id="daN-xB-KGX"/>
+                    <constraint firstItem="rJL-vN-mQJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="jUq-Uh-M6B"/>
+                    <constraint firstItem="K9e-Md-c7v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lqf-Jf-cpt"/>
+                    <constraint firstItem="rJL-vN-mQJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="pWa-Tw-U49"/>
+                    <constraint firstAttribute="trailing" secondItem="zNW-Jd-Cfh" secondAttribute="trailing" constant="8" id="tC7-iK-d9i"/>
+                    <constraint firstItem="3qz-Vf-n3N" firstAttribute="top" secondItem="rJL-vN-mQJ" secondAttribute="bottom" id="tad-dm-SPR"/>
+                    <constraint firstItem="3qz-Vf-n3N" firstAttribute="leading" secondItem="rJL-vN-mQJ" secondAttribute="leading" id="vUZ-cn-BQP"/>
+                    <constraint firstAttribute="trailing" secondItem="fNJ-eg-rWt" secondAttribute="trailing" constant="16" id="wvu-DH-mRw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.97593086957931519" green="0.98004823923110962" blue="0.98283058404922485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="earningsLabel" destination="rJL-vN-mQJ" id="HJF-8s-Cx3"/>
+                <outlet property="jobsCountLabel" destination="3qz-Vf-n3N" id="m8p-c3-OBm"/>
+                <outlet property="selectedWeekButton" destination="zNW-Jd-Cfh" id="6bD-kc-HMl"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="97.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_down" width="12" height="12"/>
+        <image name="arrow_right" width="12" height="12"/>
+    </resources>
+</document>

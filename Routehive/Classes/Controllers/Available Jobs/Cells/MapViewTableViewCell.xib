@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="MapViewTableViewCell" customModule="B4_Driver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PfI-Vw-sVR" customClass="GMSMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="199.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="KrN-YF-AdV"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NoI-rB-u2b">
+                        <rect key="frame" x="16" y="149.5" width="24" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMb-vL-1dy">
+                                <rect key="frame" x="12" y="15" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vMb-vL-1dy" firstAttribute="centerY" secondItem="NoI-rB-u2b" secondAttribute="centerY" id="2Ot-LX-Ul5"/>
+                            <constraint firstAttribute="trailing" secondItem="vMb-vL-1dy" secondAttribute="trailing" constant="12" id="5aR-us-nRM"/>
+                            <constraint firstAttribute="height" constant="30" id="6xj-vq-tz0"/>
+                            <constraint firstItem="vMb-vL-1dy" firstAttribute="leading" secondItem="NoI-rB-u2b" secondAttribute="leading" constant="12" id="oED-Q5-uTr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PfI-Vw-sVR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Cav-C1-JDj"/>
+                    <constraint firstAttribute="trailing" secondItem="PfI-Vw-sVR" secondAttribute="trailing" id="Vbc-TB-fJR"/>
+                    <constraint firstAttribute="bottom" secondItem="NoI-rB-u2b" secondAttribute="bottom" constant="20" id="ZyZ-N0-KYZ"/>
+                    <constraint firstItem="NoI-rB-u2b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="jlt-nF-oEu"/>
+                    <constraint firstItem="PfI-Vw-sVR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="n8p-mH-XOD"/>
+                    <constraint firstAttribute="bottom" secondItem="PfI-Vw-sVR" secondAttribute="bottom" id="wcv-dp-GhP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="etaLabel" destination="vMb-vL-1dy" id="QLd-Bn-SRR"/>
+                <outlet property="mapView" destination="PfI-Vw-sVR" id="BiD-0f-7Fd"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="130"/>
+        </tableViewCell>
+    </objects>
+</document>

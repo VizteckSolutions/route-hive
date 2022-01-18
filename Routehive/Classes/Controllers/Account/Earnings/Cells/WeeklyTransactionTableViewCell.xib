@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-B.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-M.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="159" id="KGk-i7-Jjw" customClass="WeeklyTransactionTableViewCell" customModule="B4_Driver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="158.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_pickup_1" translatesAutoresizingMaskIntoConstraints="NO" id="Wwv-ma-ood">
+                        <rect key="frame" x="18" y="57.5" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="ERG-Z1-nru"/>
+                            <constraint firstAttribute="height" constant="16" id="ftu-op-Eju"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(12 Miles)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8r-b3-MkW">
+                        <rect key="frame" x="116" y="22" width="73" height="18"/>
+                        <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="16"/>
+                        <color key="textColor" red="0.67450980392156867" green="0.68235294117647061" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jalan Meranti 3, pakan Batang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tik-Uf-djS">
+                        <rect key="frame" x="42" y="57.5" width="262" height="16"/>
+                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_pickup" translatesAutoresizingMaskIntoConstraints="NO" id="CgT-i2-zZO">
+                        <rect key="frame" x="18" y="92.5" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Ce7-lz-mGS"/>
+                            <constraint firstAttribute="width" constant="16" id="bX4-cU-rjc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ligmas sdn.bhd.Jalan Meranti 3, pakan Batang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC2-oA-2fG">
+                        <rect key="frame" x="42" y="92.5" width="262" height="16"/>
+                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RM 60.00" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnm-8i-Zkv">
+                        <rect key="frame" x="20" y="15" width="86.5" height="30.5"/>
+                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="20"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Y3-7V-4SY">
+                        <rect key="frame" x="24" y="76.5" width="4" height="4"/>
+                        <color key="backgroundColor" red="0.69411764710000001" green="0.70196078429999997" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="9Y3-7V-4SY" secondAttribute="height" multiplier="1:1" id="Be6-jh-lxk"/>
+                            <constraint firstAttribute="width" constant="4" id="fPv-2i-1ys"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCirculer" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJ9-KY-pE0">
+                        <rect key="frame" x="24" y="85.5" width="4" height="4"/>
+                        <color key="backgroundColor" red="0.69411764710000001" green="0.70196078429999997" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kJ9-KY-pE0" secondAttribute="height" multiplier="1:1" id="lyP-g5-d4T"/>
+                            <constraint firstAttribute="width" constant="4" id="t7j-nU-LYF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCirculer" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMx-yK-CHT">
+                        <rect key="frame" x="0.0" y="154.5" width="320" height="4"/>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="Xij-ex-PJ4"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HlM-Bi-xTw">
+                        <rect key="frame" x="20" y="118.5" width="113" height="16"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_pickup_time" translatesAutoresizingMaskIntoConstraints="NO" id="phL-2D-rVB">
+                                <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28 Sept, 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLN-V5-VHC">
+                                <rect key="frame" x="26" y="0.0" width="87" height="16"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                                <color key="textColor" red="0.73725490199999999" green="0.73725490199999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9Y3-7V-4SY" firstAttribute="centerX" secondItem="Wwv-ma-ood" secondAttribute="centerX" id="0bG-Qe-yPf"/>
+                    <constraint firstItem="HlM-Bi-xTw" firstAttribute="leading" secondItem="CgT-i2-zZO" secondAttribute="leading" constant="2" id="3UF-n5-H4z"/>
+                    <constraint firstItem="bC2-oA-2fG" firstAttribute="leading" secondItem="CgT-i2-zZO" secondAttribute="trailing" constant="8" id="61X-hV-c1F"/>
+                    <constraint firstItem="CgT-i2-zZO" firstAttribute="leading" secondItem="Wwv-ma-ood" secondAttribute="leading" id="7S6-sL-Eq6"/>
+                    <constraint firstItem="9Y3-7V-4SY" firstAttribute="top" secondItem="Wwv-ma-ood" secondAttribute="bottom" constant="3" id="Ffq-nr-6Gv"/>
+                    <constraint firstItem="Vnm-8i-Zkv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="G2u-GT-J6H"/>
+                    <constraint firstItem="Wwv-ma-ood" firstAttribute="top" secondItem="Vnm-8i-Zkv" secondAttribute="bottom" constant="12" id="GB0-aa-NWL"/>
+                    <constraint firstAttribute="trailing" secondItem="tik-Uf-djS" secondAttribute="trailing" constant="16" id="MbA-2M-6Xn"/>
+                    <constraint firstItem="Wwv-ma-ood" firstAttribute="leading" secondItem="Vnm-8i-Zkv" secondAttribute="leading" constant="-2" id="Pfd-2d-C4W"/>
+                    <constraint firstItem="HlM-Bi-xTw" firstAttribute="top" secondItem="CgT-i2-zZO" secondAttribute="bottom" constant="10" id="Ptd-MA-GS1"/>
+                    <constraint firstAttribute="trailing" secondItem="pMx-yK-CHT" secondAttribute="trailing" id="QOd-gs-VN2"/>
+                    <constraint firstItem="kJ9-KY-pE0" firstAttribute="width" secondItem="kJ9-KY-pE0" secondAttribute="height" multiplier="1:1" id="TTE-aB-YOV"/>
+                    <constraint firstItem="Vnm-8i-Zkv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="VDc-oa-ha2"/>
+                    <constraint firstItem="kJ9-KY-pE0" firstAttribute="top" secondItem="9Y3-7V-4SY" secondAttribute="bottom" constant="5" id="X5C-aQ-2Vi"/>
+                    <constraint firstItem="kJ9-KY-pE0" firstAttribute="centerX" secondItem="Wwv-ma-ood" secondAttribute="centerX" id="Xb7-Pm-qu1"/>
+                    <constraint firstItem="pMx-yK-CHT" firstAttribute="top" secondItem="HlM-Bi-xTw" secondAttribute="bottom" constant="20" id="Xo1-sN-1kP"/>
+                    <constraint firstItem="tik-Uf-djS" firstAttribute="leading" secondItem="Wwv-ma-ood" secondAttribute="trailing" constant="8" id="Zmp-I6-GF8"/>
+                    <constraint firstItem="a8r-b3-MkW" firstAttribute="leading" secondItem="Vnm-8i-Zkv" secondAttribute="trailing" constant="10" id="bBB-jU-8wa"/>
+                    <constraint firstItem="9Y3-7V-4SY" firstAttribute="width" secondItem="9Y3-7V-4SY" secondAttribute="height" multiplier="1:1" id="iRe-vA-1Rw"/>
+                    <constraint firstAttribute="bottom" secondItem="pMx-yK-CHT" secondAttribute="bottom" id="leJ-Mt-QFg"/>
+                    <constraint firstItem="bC2-oA-2fG" firstAttribute="centerY" secondItem="CgT-i2-zZO" secondAttribute="centerY" id="lhd-k6-AtR"/>
+                    <constraint firstItem="a8r-b3-MkW" firstAttribute="centerY" secondItem="Vnm-8i-Zkv" secondAttribute="centerY" id="r8N-wU-BJa"/>
+                    <constraint firstItem="tik-Uf-djS" firstAttribute="centerY" secondItem="Wwv-ma-ood" secondAttribute="centerY" id="ryL-qf-9Kv"/>
+                    <constraint firstItem="kJ9-KY-pE0" firstAttribute="width" secondItem="kJ9-KY-pE0" secondAttribute="height" multiplier="1:1" id="s60-4M-uOg"/>
+                    <constraint firstItem="pMx-yK-CHT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uCH-Cs-yij"/>
+                    <constraint firstItem="bC2-oA-2fG" firstAttribute="trailing" secondItem="tik-Uf-djS" secondAttribute="trailing" id="x2R-Ks-Dw0"/>
+                    <constraint firstItem="CgT-i2-zZO" firstAttribute="top" secondItem="kJ9-KY-pE0" secondAttribute="bottom" constant="3" id="zZv-4F-pWN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="distanceLabel" destination="a8r-b3-MkW" id="OTC-Rz-Jl4"/>
+                <outlet property="dropoffAddressLabel" destination="bC2-oA-2fG" id="WZS-Zy-vD3"/>
+                <outlet property="earningLabel" destination="Vnm-8i-Zkv" id="IUv-TC-lZk"/>
+                <outlet property="pickupAddressLabel" destination="tik-Uf-djS" id="15N-bS-tld"/>
+                <outlet property="pickupTimeImageView" destination="phL-2D-rVB" id="lVe-bw-H3L"/>
+                <outlet property="pickupTimeLabel" destination="bLN-V5-VHC" id="sfz-37-Itf"/>
+                <outlet property="pickupTimeStackView" destination="HlM-Bi-xTw" id="Evu-kz-tpm"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="109.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_pickup" width="16" height="16"/>
+        <image name="icon_pickup_1" width="16" height="16"/>
+        <image name="icon_pickup_time" width="16" height="16"/>
+    </resources>
+</document>

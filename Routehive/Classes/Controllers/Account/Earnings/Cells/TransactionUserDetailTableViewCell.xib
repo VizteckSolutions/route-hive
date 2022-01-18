@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-B.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="215" id="KGk-i7-Jjw" customClass="TransactionUserDetailTableViewCell" customModule="B4_Driver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="214.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_default_image" translatesAutoresizingMaskIntoConstraints="NO" id="Ac0-48-y12">
+                        <rect key="frame" x="16" y="49" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="IBj-40-Wm1"/>
+                            <constraint firstAttribute="height" constant="70" id="kkS-TP-gzv"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCirculer" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="Dora Little" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjz-9R-mFq">
+                        <rect key="frame" x="94" y="59" width="82.5" height="19.5"/>
+                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                        <color key="textColor" red="0.047058823530000002" green="0.015686274510000001" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUj-jn-R89">
+                        <rect key="frame" x="16" y="21" width="62" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="nTy-Ak-poi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                        <color key="textColor" red="0.62352941179999999" green="0.61960784310000006" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J79-bu-CLT">
+                        <rect key="frame" x="94" y="86" width="120" height="20"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SxV-em-qc8" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="2" y="2" width="93" height="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="icon_rating"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="icon_rating_inactive"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2Q-fd-BlB">
+                                <rect key="frame" x="100" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="aai-oP-hAc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                                <color key="textColor" red="0.62352941179999999" green="0.61960784310000006" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="i2Q-fd-BlB" secondAttribute="bottom" id="7vX-r1-FgY"/>
+                            <constraint firstItem="i2Q-fd-BlB" firstAttribute="top" secondItem="J79-bu-CLT" secondAttribute="top" id="JaK-lB-7gf"/>
+                            <constraint firstAttribute="height" constant="20" id="O4z-Vo-0RW"/>
+                            <constraint firstItem="i2Q-fd-BlB" firstAttribute="leading" secondItem="SxV-em-qc8" secondAttribute="trailing" constant="5" id="WVQ-hk-2Vx"/>
+                            <constraint firstAttribute="bottom" secondItem="SxV-em-qc8" secondAttribute="bottom" constant="2" id="XwU-nR-Ii2"/>
+                            <constraint firstAttribute="width" constant="120" id="bKb-wP-nWb"/>
+                            <constraint firstItem="SxV-em-qc8" firstAttribute="leading" secondItem="J79-bu-CLT" secondAttribute="leading" constant="2" id="jBQ-Ka-z9O"/>
+                            <constraint firstAttribute="trailing" secondItem="i2Q-fd-BlB" secondAttribute="trailing" id="xS4-R7-De9"/>
+                            <constraint firstItem="SxV-em-qc8" firstAttribute="top" secondItem="J79-bu-CLT" secondAttribute="top" constant="2" id="y83-L2-9vi"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92H-sj-xmA">
+                        <rect key="frame" x="184" y="69.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                        <color key="textColor" red="0.62352941179999999" green="0.61960784310000006" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQ1-zH-H0F">
+                        <rect key="frame" x="16" y="131" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="vk6-Eg-Bxc"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gh8-1z-3tu">
+                        <rect key="frame" x="16" y="197.5" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="I9n-4v-lkA"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Earning" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBc-Jv-Iwy">
+                        <rect key="frame" x="16" y="160" width="103.5" height="25.5"/>
+                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RM 60.00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoN-GZ-BO9">
+                        <rect key="frame" x="230" y="163" width="73.5" height="19.5"/>
+                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="17"/>
+                        <color key="textColor" red="0.77647058823529413" green="0.0" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQl-MH-POd">
+                        <rect key="frame" x="268" y="81" width="46" height="30"/>
+                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                        <state key="normal" title="Rate this user">
+                            <color key="titleColor" red="0.83921568627450982" green="0.16078431372549021" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="rateUserButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Bz7-5R-YIK"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wjz-9R-mFq" firstAttribute="top" secondItem="Ac0-48-y12" secondAttribute="top" constant="10" id="0Ng-fp-3Z3"/>
+                    <constraint firstAttribute="trailing" secondItem="gh8-1z-3tu" secondAttribute="trailing" id="154-ut-UYk"/>
+                    <constraint firstItem="XBc-Jv-Iwy" firstAttribute="leading" secondItem="qQ1-zH-H0F" secondAttribute="leading" id="1Gw-Nj-sWl"/>
+                    <constraint firstItem="gh8-1z-3tu" firstAttribute="top" secondItem="XBc-Jv-Iwy" secondAttribute="bottom" constant="12" id="3F7-Fp-5DX"/>
+                    <constraint firstItem="J79-bu-CLT" firstAttribute="top" secondItem="wjz-9R-mFq" secondAttribute="bottom" constant="7.5" id="7fn-VU-NC8"/>
+                    <constraint firstItem="XBc-Jv-Iwy" firstAttribute="top" secondItem="qQ1-zH-H0F" secondAttribute="bottom" constant="28" id="8bH-LG-aaK"/>
+                    <constraint firstAttribute="trailing" secondItem="bQl-MH-POd" secondAttribute="trailing" constant="16" id="8qX-dz-KBt"/>
+                    <constraint firstItem="Ac0-48-y12" firstAttribute="top" secondItem="pUj-jn-R89" secondAttribute="bottom" constant="8" id="CqH-Bi-chw"/>
+                    <constraint firstItem="Ac0-48-y12" firstAttribute="leading" secondItem="pUj-jn-R89" secondAttribute="leading" id="GSC-F1-4SP"/>
+                    <constraint firstItem="qQ1-zH-H0F" firstAttribute="top" secondItem="Ac0-48-y12" secondAttribute="bottom" constant="12" id="JC7-93-4YQ"/>
+                    <constraint firstItem="pUj-jn-R89" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="N8t-tk-ypg"/>
+                    <constraint firstItem="wjz-9R-mFq" firstAttribute="leading" secondItem="Ac0-48-y12" secondAttribute="trailing" constant="8" id="OPC-VO-8dq"/>
+                    <constraint firstItem="pUj-jn-R89" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Ogc-ca-tlb"/>
+                    <constraint firstItem="bQl-MH-POd" firstAttribute="centerY" secondItem="J79-bu-CLT" secondAttribute="centerY" id="P2U-80-OCG"/>
+                    <constraint firstAttribute="trailing" secondItem="CoN-GZ-BO9" secondAttribute="trailing" constant="16" id="Wjd-8i-jdw"/>
+                    <constraint firstItem="92H-sj-xmA" firstAttribute="leading" secondItem="wjz-9R-mFq" secondAttribute="trailing" constant="7.5" id="Z7b-TE-nsv"/>
+                    <constraint firstItem="gh8-1z-3tu" firstAttribute="leading" secondItem="qQ1-zH-H0F" secondAttribute="leading" id="h7O-q5-UEO"/>
+                    <constraint firstItem="CoN-GZ-BO9" firstAttribute="centerY" secondItem="XBc-Jv-Iwy" secondAttribute="centerY" id="rsX-XW-y0Z"/>
+                    <constraint firstItem="92H-sj-xmA" firstAttribute="centerY" secondItem="wjz-9R-mFq" secondAttribute="centerY" id="tC8-Ev-7n1"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="92H-sj-xmA" secondAttribute="trailing" constant="16" id="uHx-TM-gtZ"/>
+                    <constraint firstAttribute="trailing" secondItem="qQ1-zH-H0F" secondAttribute="trailing" id="v3b-6c-ffo"/>
+                    <constraint firstItem="qQ1-zH-H0F" firstAttribute="leading" secondItem="Ac0-48-y12" secondAttribute="leading" id="wUw-Xc-YeM"/>
+                    <constraint firstItem="J79-bu-CLT" firstAttribute="leading" secondItem="wjz-9R-mFq" secondAttribute="leading" id="xmt-st-yrQ"/>
+                    <constraint firstAttribute="bottom" secondItem="gh8-1z-3tu" secondAttribute="bottom" constant="16" id="z2K-5v-eAN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountLabel" destination="CoN-GZ-BO9" id="qOz-V5-rTx"/>
+                <outlet property="customerLabel" destination="pUj-jn-R89" id="IiB-nb-1EC"/>
+                <outlet property="profileImageView" destination="Ac0-48-y12" id="rcJ-eF-YTj"/>
+                <outlet property="rateUserButton" destination="bQl-MH-POd" id="hNv-dJ-kJi"/>
+                <outlet property="userNameLabel" destination="wjz-9R-mFq" id="oW9-14-yc3"/>
+                <outlet property="userRatingLabel" destination="i2Q-fd-BlB" id="Ljs-FB-eeq"/>
+                <outlet property="userRatingView" destination="SxV-em-qc8" id="ft7-u3-yF7"/>
+                <outlet property="vehicleLabel" destination="92H-sj-xmA" id="HyX-Rq-lol"/>
+                <outlet property="yourEarningLabel" destination="XBc-Jv-Iwy" id="JQc-ac-uqZ"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="139.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_default_image" width="96" height="96"/>
+        <image name="icon_rating" width="12" height="12"/>
+        <image name="icon_rating_inactive" width="12" height="12"/>
+    </resources>
+</document>

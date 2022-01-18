@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="57" id="KGk-i7-Jjw" customClass="CountryTableViewCell" customModule="B4_Driver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="56.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag_empty" translatesAutoresizingMaskIntoConstraints="NO" id="kYs-se-E1W">
+                        <rect key="frame" x="8" y="12" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="HDh-bu-MIU"/>
+                            <constraint firstAttribute="width" constant="32" id="hC6-76-Ywf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyU-7b-QEV">
+                        <rect key="frame" x="48" y="28" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                        <color key="textColor" red="0.14509803921568629" green="0.13725490196078433" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kYs-se-E1W" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="d4E-ZO-YhY"/>
+                    <constraint firstItem="eyU-7b-QEV" firstAttribute="leading" secondItem="kYs-se-E1W" secondAttribute="trailing" constant="8" id="eVi-e0-0q9"/>
+                    <constraint firstItem="eyU-7b-QEV" firstAttribute="centerY" secondItem="kYs-se-E1W" secondAttribute="centerY" id="gge-xZ-Zog"/>
+                    <constraint firstItem="kYs-se-E1W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="rQK-wh-TeM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="countryLabel" destination="eyU-7b-QEV" id="ghy-A7-djF"/>
+                <outlet property="flageImageView" destination="kYs-se-E1W" id="rMC-wl-TcZ"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="58.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="flag_empty" width="24" height="18"/>
+    </resources>
+</document>
