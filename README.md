@@ -46,10 +46,17 @@ u need to add these keys to make it run.
 
 Clean project again and Run. 
 
-
+```
 ##  Complete Project with backend
 - For complete project Node.js Backend and Angular Frontend Admin panel 
 Please connect at info@vizteck.com
+
+- Complete project details can be found here https://www.routehive.com/
+
+- Project Components
+  - Driver App
+  - Admin Panel
+  - User Booking Website and Mobile Applications
 ```
 
 
