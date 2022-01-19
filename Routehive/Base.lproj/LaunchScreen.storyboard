@@ -22,7 +22,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="driver_logo" translatesAutoresizingMaskIntoConstraints="NO" id="45s-Cr-8ok">
                                 <rect key="frame" x="122.5" y="254.5" width="130.5" height="158"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL RIGHTS RESERVED © 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRL-BX-I1J">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL RIGHTS RESERVED © 2022" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRL-BX-I1J">
                                 <rect key="frame" x="20" y="622.5" width="335" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.83529411760000005" green="0.16078431369999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

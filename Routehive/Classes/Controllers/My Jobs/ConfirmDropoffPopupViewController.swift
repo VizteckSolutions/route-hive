@@ -1,9 +1,4 @@
-//
-//  ConfirmDropoffPopupViewController.swift
-//  BoonDesign
-//
-//  Created by Zeshan on 26/09/2018.
-//  Copyright © 2018 vizteck. All rights reserved.
+
 //
 
 import UIKit
